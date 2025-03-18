@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 COOL 4 SKOOL - BTS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>2 COOL 4 SKOOL - BTS (방탄소년단)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#album-info">Información del Álbum</a></li>
+                <li><a href="#single">Single</a></li>
+                <li><a href="#album1">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="album-info" class="album-container">
+        <div class="album-left">
+            <img src="disc/2cool.jpg" alt="2 COOL 4 SKOOL" class="album-img">
+        </div>
+
+        <div class="album-right">
+            <h2>Detalles del Álbum</h2>
+            <p><strong>2 COOL 4 SKOOL</strong> es el álbum debut de BTS, lanzado en 2013. Con este álbum, BTS comenzó a
+                mostrar su talento y mensaje único al mundo.</p>
+            <p>Con canciones que abordan temas de juventud, sueños y la búsqueda de un propósito, este álbum fue el
+                inicio de una gran carrera.</p>
+        </div>
+    </section>
+
+    <section id="single" class="single-section">
+        <div class="single-info">
+        <h3>Single Principal: No More Dream</h3>
+        <p><strong>Producido por:</strong> BigHit Entertainment</p>
+                <p><strong>Fecha de lanzamiento:</strong> 11 de septiembre de 2013</p>
+        </div>
+        <div class="single-content">
+            <div class="single-left">
+                <p><strong>Lista de temas:</strong></p>
+                <ul id="song-list">
+                    <li class="song-item" data-song="songs/album1/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/2cool.jpg" class="album-thumbnail">
+                            1. Intro : 2 COOL 4 SKOOL
+                        </div>
+                    </li>
+                    <li class="song-item" data-song="songs/album1/2. weare.mp3" data-lyrics="lyrics/album1/we_are_bulletproof.txt">
+                        <div class="song-box">
+                            <img src="disc/2cool.jpg" class="album-thumbnail">
+                            2. We Are Bulletproof PT.2
+                        </div>
+                    </li>
+                    <li class="song-item" data-song="songs/album1/3. skit.mp3">
+                        <div class="song-box">
+                            <img src="disc/2cool.jpg" class="album-thumbnail">
+                            3. Skit: Circle Room Talk
+                        </div>
+                    </li>
+                    <li class="song-item" data-song="songs/album1/4. nomore.mp3" data-lyrics="lyrics/album1/4.more.txt">
+                        <div class="song-box">
+                            <img src="disc/2cool.jpg" class="album-thumbnail">
+                            4. No More Dream
+                        </div>
+                    </li>
+                    <li class="song-item" data-song="songs/album1/5. interlude.mp3">
+                        <div class="song-box">
+                            <img src="disc/2cool.jpg" class="album-thumbnail">
+                            5. Interlude
+                        </div>
+                    </li>
+                    <li class="song-item" data-song="songs/album1/6. like.mp3" data-lyrics="lyrics/album1/like.txt">
+                        <div class="song-box">
+                            <img src="disc/2cool.jpg" class="album-thumbnail">
+                            6. Like
+                        </div>
+                    </li>
+                    <li class="song-item" data-song="songs/album1/7.outro.mp3">
+                        <div class="song-box">
+                            <img src="disc/2cool.jpg" class="album-thumbnail">
+                            7. Outro: Circle Room Cypher
+                        </div>
+                    </li>
+                </ul>
+                <audio id="audio-player" controls style="display: none;">
+                    <source src="songs/album1/1. into.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+                </audio>
+                
+                <!-- Barra de progreso -->
+                <div id="progress-container">
+                    <div id="time-display">
+                        <span id="current-time">00:00</span>
+                        <input type="range" id="progress-bar" value="0" max="100" step="1" />
+                        <span id="total-time">00:00</span>
+                    </div>
+                </div>
+
+                <!-- Controles de audio -->
+        <div id="audio-controls">
+            <button id="prev-btn">&#10094;</button>
+            <button id="play-pause-btn">&#9658;</button> <!-- play -->
+            <button id="next-btn">&#10095;</button>
+        </div>
+    
+                <!-- Contenedor de la letra -->
+                <div id="lyrics-box">Selecciona una canción para ver la letra</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="foto-section" id="album1">
+        <h2 class="foto-title">Fotos</h2>
+        <div class="foto-container">
+            <button class="foto-btn foto-prev">&#10094;</button>
+            <img id="fotoActual" src="img_single/album01/01.jpg" alt="Imagen de BTS" class="foto-img">
+            <button class="foto-btn foto-next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Modal para ver la imagen en grande -->
+    <div id="fotoModal" class="foto-modal">
+        <span class="close">&times;</span>
+        <img class="foto-modal-content" id="fotoModalImg">
+    </div>
+
+    <section id="videos">
+        <h2>Video</h2>
+        <div class="video-gallery">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rBG5L7UsUxA" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lE9lkSdtZeQ" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+   <!-- Pie de página -->
+   <footer>
+    <p>Todos los derechos reservados 2025 © Desarrollado por <a href="desarrollador.html" style="color: rgb(252, 251, 251); text-decoration: none;" target="_blank"> Yeni Elda Garcia Ramón</a> </p>
+</footer>
+
+    <script src="js/app1.js"></script>
+</body>
+
+</html>

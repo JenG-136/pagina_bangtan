@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O!RUL8,2? - BTS</title>
+    <link rel="stylesheet" href="css/estilos_rul.css">
+</head>
+<body>
+    <header>
+        <h1>O!RUL8,2? - BTS (방탄소년단)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#album-info">Información del Álbum</a></li>
+                <li><a href="#single">Single</a></li>
+                <li><a href="#album2">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="album-info" class="album-container">
+        <div class="album-left">
+            <img src="disc/rul.jpg" alt="O!RUL8,2?" class="album-img">
+        </div>
+
+        <div class="album-right">
+            <h2>Detalles del Álbum</h2>
+            <p><strong>O!RUL8,2?</strong> es el segundo mini álbum de BTS, lanzado en 2013. Con este álbum, BTS continuó explorando temas de juventud y la presión social, consolidando su identidad en la industria del K-Pop.</p>
+            <p>Las letras expresan la lucha por los sueños y la búsqueda de la felicidad en un mundo lleno de expectativas.</p>
+        </div>
+    </section>
+
+    <section id="single" class="single-section">
+        <div class="single-info">
+            <h3>Single Principal: N.O</h3>
+        <p><strong>Producido por:</strong> BigHit Entertainment</p>
+                <p><strong>Fecha de lanzamiento:</strong> 11 de septiembre de 2013</p>
+        </div>
+        <div class="single-content">
+            <div class="single-left">
+                <p><strong>Lista de temas:</strong></p>
+                <ul id="song-list">
+                 <li class="song-item" data-song="songs/album2/1.intro.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        1. Intro: O!RUL8,2? 
+                    </div>
+                 </li> 
+                 <li class="song-item" data-song="songs/album2/2.N.O.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        2. N.O
+                    </div>
+                 </li> 
+                 <li class="song-item" data-song="songs/album2/3.We_On.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        3. We On
+                    </div>
+                 </li> 
+                 <li class="song-item" data-song="songs/album2/4.skit.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        4. Skit: R U Happy Now?
+                    </div>
+                 </li> 
+                 <li class="song-item" data-song="songs/album2/5. If I Ruled the World.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        5. If I Ruled the World
+                    </div>
+                 </li> 
+                 <li class="song-item" data-song="songs/album2/6.coffe.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        6. Coffee
+                    </div>
+                 </li> 
+                 <li class="song-item" data-song="songs/album2/7. BTS_cypher1.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        7. BTS Cypher Pt.1
+                    </div>
+                 </li> 
+                 <li class="song-item" data-song="songs/album2/8.attack.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        8. Attack on Bangtan
+                    </div>
+                 </li>
+                 <li class="song-item" data-song="songs/album2/9. paddogansan.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        9. Paldogangsan
+                    </div>
+                 </li> 
+                 <li class="song-item" data-song="songs/album2/10.outro.mp3">
+                    <div class="song-box">
+                        <img src="disc/rul.jpg" class="album-thumbnail">
+                        10. Outro: Luv in Skool
+                    </div>
+                 </li> 
+                </ul>
+                <audio id="audio-player" controls style="display: none;">
+                    <source src="songs/album2/1.intro.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+                </audio>
+
+                <!-- Barra de progreso -->
+                <div id="progress-container">
+                    <div id="time-display">
+                        <span id="current-time">00:00</span>
+                        <input type="range" id="progress-bar" value="0" max="100" step="1" />
+                        <span id="total-time">00:00</span>
+                    </div>
+                </div>
+
+                <!-- Controles de audio -->
+        <div id="audio-controls">
+            <button id="prev-btn">&#10094;</button>
+            <button id="play-pause-btn">&#9658;</button> <!-- play -->
+            <button id="next-btn">&#10095;</button>
+        </div>
+              <!-- Contenedor de la letra -->
+              <div id="lyrics-box">Selecciona una canción para ver la letra</div>
+            </div>
+            
+            
+           
+        </div>
+    </section>
+
+    <section class="foto-section" id="album2">
+        <h2 class="foto-title">Fotos</h2>
+        <div class="foto-container">
+            <button class="foto-btn foto-prev">&#10094;</button>
+            <img id="fotoActual" src="img_single/album02/0.jpeg" alt="Imagen de BTS" class="foto-img">
+            <button class="foto-btn foto-next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Video</h2>
+        <div class="video-gallery">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/r5GaAEHvHj0" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Todos los derechos reservados 2025 © Desarrollado por <a href="desarrollador.html" style="color: rgb(252, 251, 251); text-decoration: none;" target="_blank"> Yeni Elda Garcia Ramón</a> </p>
+    </footer>
+    <script src="js/app1.js"></script>
+</body>
+</html>

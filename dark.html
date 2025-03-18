@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK & WILD - BTS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>DARK & WILD - BTS (방탄소년단)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#album-info">Información del Álbum</a></li>
+                <li><a href="#single">Single</a></li>
+                <li><a href="#album4">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="album-info" class="album-container">
+        <div class="album-left">
+            <img src="disc/dark.jpg" alt="DARK & WILD" class="album-img">
+        </div>
+
+        <div class="album-right">
+            <h2>Detalles del Álbum</h2>
+            <p><strong>DARK & WILD</strong> es el primer álbum de estudio de BTS, lanzado en 2014. En este disco, el
+                grupo explora un sonido más maduro, hablando sobre el amor, la frustración y la autoexpresión.</p>
+            <p>Con un concepto más fuerte y letras intensas, este álbum mostró una nueva faceta de BTS.</p>
+        </div>
+    </section>
+
+    <section id="single" class="single-section">
+        <div class="single-info">
+            <h3>Single Principal: Danger</h3>
+        <p><strong>Producido por:</strong> BigHit Entertainment</p>
+                <p><strong>Fecha de lanzamiento:</strong> 19 de agosto de 2014</p>
+        </div>
+        
+        <div class="single-content">
+            <div class="single-left">
+                <p><strong>Lista de temas:</strong></p>
+                <ul id="song-list">
+                    <li class="song-item" data-song="songs/album4/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            1. Intro: What Am I to You 
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album4/2.danger.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            2. Danger 
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/3.war_of.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            3. War of Hormone
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/4.Hip_Hop _Lover.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            4. Hip Hop Lover
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/5.let_me.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            5. Let Me Know
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/6.rain.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            6. Rain
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/7.bts_cypher3.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            7. BTS Cypher Pt.3: Killer
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/8.phone.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            8. Could You Turn Off Your Cell Phone?
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/9.Embarrassed.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            9. Embarrassed
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/10.heaven.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            10. 24/7=Heaven
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/11.Look Here.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            11. Look Here
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/12.Second.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            12. Second Grade
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album4/13.outro.mp3">
+                        <div class="song-box">
+                            <img src="disc/dark.jpg" class="album-thumbnail">
+                            13. Outro: Does That Make Sense?
+                        </div>
+                     </li>
+                </ul>
+
+                <audio id="audio-player" controls style="display: none;">
+                    <source src="songs/album4/1.intro.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+                </audio>
+                 <!-- Barra de progreso -->
+                 <div id="progress-container">
+                    <div id="time-display">
+                        <span id="current-time">00:00</span>
+                        <input type="range" id="progress-bar" value="0" max="100" step="1" />
+                        <span id="total-time">00:00</span>
+                    </div>
+                </div>
+                 <!-- Controles de audio -->
+        <div id="audio-controls">
+            <button id="prev-btn">&#10094;</button>
+            <button id="play-pause-btn">&#9658;</button> <!-- play -->
+            <button id="next-btn">&#10095;</button>
+        </div>
+        <!-- Contenedor de la letra -->
+        <div id="lyrics-box">Selecciona una canción para ver la letra</div>
+                
+            </div>    
+        </div>
+
+    </section>
+
+    <section class="foto-section" id="album4">
+        <h2 class="foto-title">Fotos</h2>
+        <div class="foto-container">
+            <button class="foto-btn foto-prev">&#10094;</button>
+            <img id="fotoActual" src="img_single/album04/0.jpg" alt="Imagen de BTS" class="foto-img">
+            <button class="foto-btn foto-next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>VIDEO</h2>
+        <div class="video-gallery">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/43r6lXilbcQ" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XQmpVHUi-0A" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Pie de página -->
+   <footer>
+    <p>Todos los derechos reservados 2025 © Desarrollado por <a href="desarrollador.html" style="color: rgb(252, 251, 251); text-decoration: none;" target="_blank"> Yeni Elda Garcia Ramón</a> </p>
+</footer>
+    <script src="js/app1.js"></script>
+</body>
+
+</html>

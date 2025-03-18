@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE - BTS</title>
+    <link rel="stylesheet" href="css/estilos5.css">
+</head>
+
+<body>
+    <header>
+        <h1>BE - BTS (방탄소년단)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#album-info">Información del Álbum</a></li>
+                <li><a href="#single">Single</a></li>
+                <li><a href="#album16">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="album-info" class="album-container">
+        <div class="album-left">
+            <img src="disc/be.jpg" alt="album" class="album-img">
+        </div>
+
+        <div class="album-right">
+            <h2>Detalles del Álbum</h2>
+            <p>Este álbum, lanzado en 2020, refleja las emociones de BTS durante la pandemia. A través de sus canciones,
+                expresan esperanza y conexión en tiempos de incertidumbre.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="single" class="single-section">
+        <div class="single-info">
+            <h3>Single Principal: Life Goes On</h3>
+        <p><strong>Producido por:</strong> BigHit Entertainment</p>
+                <p><strong>Fecha de lanzamiento:</strong> 20 de noviembre de 2020</p>
+        </div>
+        
+        <div class="single-content">
+            <div class="single-left">
+                <p><strong>Lista de temas:</strong></p>
+                <ul id="song-list">
+                    <li class="song-item" data-song="songs/album16/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/be.jpg" class="album-thumbnail">
+                            1. Life Goes On
+                        </div>
+                    </li> 
+                    <li class="song-item" data-song="songs/album16/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/be.jpg" class="album-thumbnail">
+                            2. Fly to My Room
+                        </div>
+                    </li> 
+                    <li class="song-item" data-song="songs/album16/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/be.jpg" class="album-thumbnail">
+                            3. Blue & Grey
+                        </div>
+                    </li> 
+                    <li class="song-item" data-song="songs/album16/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/be.jpg" class="album-thumbnail">
+                            4. Skit
+                        </div>
+                    </li> 
+                    <li class="song-item" data-song="songs/album16/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/be.jpg" class="album-thumbnail">
+                            5. Telepathy
+                        </div>
+                    </li> 
+                    <li class="song-item" data-song="songs/album16/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/be.jpg" class="album-thumbnail">
+                            6. Dis-ease
+                        </div>
+                    </li> 
+                    <li class="song-item" data-song="songs/album16/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/be.jpg" class="album-thumbnail">
+                            7. Stay
+                        </div>
+                    </li> 
+                    <li class="song-item" data-song="songs/album16/1. into.mp3">
+                        <div class="song-box">
+                            <img src="disc/be.jpg" class="album-thumbnail">
+                            8. Dynamite
+                        </div>
+                    </li> 
+                </ul>
+                <audio id="audio-player" controls style="display: none;">
+                    <source src="songs/album16/1. into.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+                </audio>
+                
+                <!-- Barra de progreso -->
+                <div id="progress-container">
+                    <div id="time-display">
+                        <span id="current-time">00:00</span>
+                        <input type="range" id="progress-bar" value="0" max="100" step="1" />
+                        <span id="total-time">00:00</span>
+                    </div>
+                </div>
+
+                <div id="audio-controls">
+                    <button id="prev-btn">&#10094;</button>
+                    <button id="play-pause-btn">&#9658;</button> <!-- play -->
+                    <button id="next-btn">&#10095;</button>
+                </div>
+                <!-- Contenedor de la letra -->
+                <div id="lyrics-box">Selecciona una canción para ver la letra</div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="foto-section" id="album16">
+        <h2 class="foto-title">Fotos</h2>
+        <div class="foto-container">
+            <button class="foto-btn foto-prev">&#10094;</button>
+            <img id="fotoActual" src="img_single/album16/0.jpg" alt="Imagen de BTS" class="foto-img">
+            <button class="foto-btn foto-next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Modal para ver la imagen en grande -->
+    <div id="fotoModal" class="foto-modal">
+        <span class="close">&times;</span>
+        <img class="foto-modal-content" id="fotoModalImg">
+    </div>
+
+    <section id="videos">
+        <h2>VIDEO</h2>
+        <div class="video-gallery">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-5q5mZbe3V8" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+   <!-- Pie de página -->
+   <footer>
+    <p>Todos los derechos reservados 2025 © Desarrollado por <a href="desarrollador.html" style="color: rgb(252, 251, 251); text-decoration: none;" target="_blank"> Yeni Elda Garcia Ramón</a> </p>
+</footer>
+    <script src="js/app1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+body{
+background-image:url(images/symphony.png);
+margin: 10px auto;
+width:70%;
+font-family: "Arial";
+}
+
+header{
+width: 100%; /*Establecemos que el header abarque el 100% del documento*/
+overflow:hidden; /*Eliminamos errores de float*/
+background-color: #cfb5f0;
+margin-bottom:0px;
+padding: 0px;
+border-radius: 25px 25px 0px 0px; /*Superior, derecho, inferior, izquierdo*/
+border-style:none;
+}
+
+header>div>h1,h2{
+font-family: "Arial";
+letter-spacing: 1px;
+text-transform: bold;
+text-align: center;
+margin: 20px 20px 0px 70px
+}
+
+header>div>p{
+font-family: "Arial";
+text-align: center;
+margin: auto;
+size: 14px;
+margin: 0px 20px 0px 70px;
+line-height: 1.5;
+}
+
+.divizq{
+float:left;
+width: 30%;
+margin-top: 0px;
+align-contend: center;
+}
+
+.divder{
+float:right;
+width: 70%;
+text-align: center;
+align-contend: center;
+margin: auto;
+}
+
+.imgizq{
+float: left;
+padding: 0px 0px 0px 0px; /*Superior, derecho, inferior, izquierdo*/
+width: 300px;
+height: 533px;
+margin-top:0px;
+}
+
+li{
+font-family: "Arial";
+text-align: justify;
+margin: auto;
+size: 10px;
+line-height: 2;
+}
+
+.listaside{
+font-family: "Arial";
+text-align: left;
+margin: auto;
+size: 10px;
+line-height: 1;
+}
+
+section{
+float: right;
+width: 65%;
+text-align: justify;
+margin-top: 10px;
+background-color: #d5d3da;
+}
+
+article{
+margin-bottom: 5px;
+padding: 10px;
+border-radius:10px 10px 10px 10px;
+border-style: solid;
+border-width: 0px;
+background-color: #d5d3da;
+}
+
+aside{
+float: left;
+width: 35%;
+text-align: justify;
+margin-top: 0px;
+background-color: #cfb5f0;
+}
+
+blockquote{
+margin-bottom: 5px;
+padding: 10px;
+border-radius: 10px 10px 10px 10px;
+border-style: solid;
+border-width: 2px;
+border-color: #cec3e5;
+background-color: #cec3e5;
+}
+
+.icon{
+width: 15px;
+height: 15px;
+padding: 10px;
+background-color: rgb(245, 245, 245);
+border-radius: 100%;
+float: left;
+margin-right: 10px;
+vertical-align: middle;
+
+}
+
+.botonredes{
+display: inline-flex;
+width: 20px;
+height: 20px;
+padding: 10px;
+background-color: rgb(245,245,245);
+border-radius: 100%;
+}
+
+.botonredes img{
+width: 20px;
+height: 20px;
+}
+
+footer{
+width: 100%; /*establecemos que el hedaer abrque el 100% del documento*/
+overflow: hidden; /*eliminamos errores de float*/
+background-color: #cfb5f0;
+margin-bottom: 0px;
+padding: 0px;
+border-radius: 0px 0px 15px 15px;
+border-style: none;
+margin: auto;
+}
+
+.contenedor{
+padding: 10px 20px 10px 20px; /*Superior, derecho, inferior, izquierdo*/
+background-color: rgba(188, 222, 160, 0.67); /*redondea el borde*/
+border-radius: 2em;
+box-shadow: 0px 5px 3px rbga(0,0,0, .4);
+}

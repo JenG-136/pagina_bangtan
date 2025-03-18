@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MOST BEAUTIFUL MOMENT IN LIFE PT.1 - BTS</title>
+    <link rel="stylesheet" href="css/estilos_rul.css">
+</head>
+
+<body>
+    <header>
+        <h1>THE MOST BEAUTIFUL MOMENT IN LIFE PT.1 - BTS (방탄소년단)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#album-info">Información del Álbum</a></li>
+                <li><a href="#single">Single</a></li>
+                <li><a href="#album5">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="album-info" class="album-container">
+        <div class="album-left">
+            <img src="disc/the moments p1.jpg" alt="album" class="album-img">
+        </div>
+
+        <div class="album-right">
+            <h2>Detalles del Álbum</h2>
+            <p><strong>THE MOST BEAUTIFUL MOMENT IN LIFE PT.1</strong> Este álbum, lanzado en 2015, marca un cambio en
+                la narrativa de BTS, abordando la juventud con un tono más melancólico y reflexivo. Habla sobre la
+                felicidad efímera, los sueños y las dificultades de crecer.</p>
+        </div>
+    </section>
+
+    <section id="single" class="single-section">
+        <div class="single-info">
+            <h3>Single Principal: I Need U</h3>
+        <p><strong>Producido por:</strong> BigHit Entertainment</p>
+                <p><strong>Fecha de lanzamiento:</strong> 29 de abril de 2015</p>
+        </div>
+        
+        <div class="single-content">
+            <div class="single-left">
+                    <p><strong>Lista de temas:</strong></p>
+                    <ul id="song-list">
+                    <li class="song-item" data-song="songs/album5/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/the moments p1.jpg" class="album-thumbnail">
+                            1. Intro: The Most Beautiful Moment in Life 
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album5/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/the moments p1.jpg" class="album-thumbnail">
+                            2. I Need U
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album5/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/the moments p1.jpg" class="album-thumbnail">
+                            3. Hold Me Tight
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album5/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/the moments p1.jpg" class="album-thumbnail">
+                            4. Dope
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album5/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/the moments p1.jpg" class="album-thumbnail">
+                            5. Boyz with Fun
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album5/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/the moments p1.jpg" class="album-thumbnail">
+                            6. Converse High
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album5/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/the moments p1.jpg" class="album-thumbnail">
+                            7. Moving On
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album5/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/the moments p1.jpg" class="album-thumbnail">
+                            8. Outro: Love is Not Over
+                        </div>
+                     </li>
+                    </ul>
+
+                     <audio id="audio-player" controls style="display: none;">
+                        <source src="songs/album5/1.into.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                     <!-- Barra de progreso -->
+                     <div id="progress-container">
+                        <div id="time-display">
+                            <span id="current-time">00:00</span>
+                            <input type="range" id="progress-bar" value="0" max="100" step="1" />
+                            <span id="total-time">00:00</span>
+                        </div>
+                </div>
+                 <!-- Controles de audio -->
+        <div id="audio-controls">
+            <button id="prev-btn">&#10094;</button>
+            <button id="play-pause-btn">&#9658;</button> <!-- play -->
+            <button id="next-btn">&#10095;</button>
+        </div>
+        <!-- Contenedor de la letra -->
+        <div id="lyrics-box">Selecciona una canción para ver la letra</div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="foto-section" id="album4">
+        <h2 class="foto-title">Fotos</h2>
+        <div class="foto-container">
+            <button class="foto-btn foto-prev">&#10094;</button>
+            <img id="fotoActual" src="img_single/album05/0.jpg" alt="Imagen de BTS" class="foto-img">
+            <button class="foto-btn foto-next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>VIDEO</h2>
+        <div class="video-gallery">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NMdTd9e-LEI" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BVwAVbKYYeM" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Todos los derechos reservados 2025 © Desarrollado por <a href="desarrollador.html" style="color: rgb(252, 251, 251); text-decoration: none;" target="_blank"> Yeni Elda Garcia Ramón</a> </p>
+    </footer>
+    <script src="js/app1.js"></script>
+</body>
+
+</html>

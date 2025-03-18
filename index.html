@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS - Página Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-content">
+            <p>Bienvenidos a la página de</p>
+            <h1>BTS (방탄소년단)</h1>
+        </div>
+    </header>
+
+    <!-- Menú de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#biography">Biografía</a></li>
+            <li><a href="#members">Miembros</a></li>
+            <li><a href="#discography">Discografía</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <video autoplay loop muted class="bg-video">
+            <source src="./video/army_bts.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+        <p>Este es un sitio dedicado al increíble grupo de K-Pop BTS. Aquí encontrarás todo sobre su historia, miembros,
+            música, discografía y mucho más.</p>
+        </div>
+    </section>
+
+    <!-- Sección Biografía -->
+    <section id="biography">
+        <div class="video-container">
+            <video autoplay loop muted class="bg-video">
+                <source src="./video/bibliografia.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay">
+        <h2>Biografía</h2>
+        <p>BTS es un grupo surcoreano de K-Pop formado por BigHit Entertainment en 2013. Su música abarca una amplia
+            gama de temas, incluyendo el amor, la salud mental, el autodescubrimiento y los problemas sociales, lo que
+            ha resonado profundamente con su audiencia global.</p>
+        <p>A lo largo de los años, BTS ha revolucionado la industria del K-Pop, alcanzando fama mundial y llevando el
+            nombre de Corea del Sur a escenarios internacionales. Han colaborado con reconocidos artistas de todo el
+            mundo y han logrado posicionarse en los primeros lugares de las listas de ventas a nivel global.</p>
+        <p>El nombre del grupo, BTS, es una abreviatura de Bangtan Sonyeondan (방탄소년단), que significa "Boy Scouts a
+            prueba de balas". Debutaron el 13 de junio de 2013 con la canción "No More Dream", parte de su álbum debut
+            <strong>2 Cool 4 Skool</strong> .</p>
+        <p>Con una trayectoria llena de logros, premios y récords, BTS se ha consolidado como el grupo más influyente en
+            la historia del K-Pop.</p>
+        <div align="center">
+            <img src="bts.jpeg" width="50%" height="100%" alt="BTS Image">
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Miembros -->
+    <section id="members">
+        <h2>Miembros de BTS</h2>
+        <ul>
+            <li data-member="RM"><img src="img/RM.jpg" alt="RM" width="100" height="100">
+                <p>RM</p>
+            </li>
+            <li data-member="Jin"><img src="img/Jin.jpg" alt="Jin" width="100" height="100">
+                <p>Jin</p>
+            </li>
+            <li data-member="Suga"><img src="img/Suga.jpg" alt="Suga" width="100" height="100">
+                <p>Suga</p>
+            </li>
+            <li data-member="J-Hope"><img src="img/J-Hope.jpg" alt="J-Hope" width="100" height="100">
+                <p>J-Hope</p>
+            </li>
+            <li data-member="Jimin"><img src="img/Jimin.jpg" alt="Jimin" width="100" height="100">
+                <p>Jimin</p>
+            </li>
+            <li data-member="V"><img src="img/V.jpg" alt="V" width="100" height="100">
+                <p>V</p>
+            </li>
+            <li data-member="Jungkook"><img src="img/Jungkook.jpg" alt="Jungkook" width="100" height="100">
+                <p>Jungkook</p>
+            </li>
+        </ul>
+        <div id="member-info" class="modal">
+            <div class="modal-content">
+                <span class="close"></span>
+                <h3 id="member-name"></h3>
+                <p id="member-bio"></p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección Discografía -->
+    <section id="discography">
+        <h2>Discografía</h2>
+        <p>A lo largo de su carrera, BTS ha evolucionado musicalmente, explorando distintos géneros y transmitiendo
+            mensajes profundos en sus canciones. Su discografía refleja su crecimiento artístico y su impacto en la
+            industria global.</p><br>
+        <ul>
+            <li><a href="album_2cool.html"><img src="disc/2cool.jpg" alt="2 COOL 4 SKOOL" width="100"></a></li>
+            <li><a href="rul8.html"><img src="disc/rul.jpg" alt="O!RUL8,2?" width="100"></a></li>
+            <li><a href="skool.html"><img src="disc/skool luv.jpg" alt="SKOOL LUV AFFAIR" width="100"></a></li>
+            <li><a href="dark.html"><img src="disc/dark.jpg" alt="DARK & WILD" width="100"></a></li>
+            <li><a href="moments_p1.html"><img src="disc/the moments p1.jpg" alt="THE MOST BEAUTIFUL MOMENT IN LIFE PT.1" width="100"></a></li>
+            <li><a href="moments_p2.html"><img src="disc/the moments p2.jpg" alt="THE MOST BEAUTIFUL MOMENT IN LIFE PT.2" width="100"></a></li>
+            <li><a href="forever.html"><img src="disc/forever.jpg" alt="forever" width="100"></a></li>
+            <li><a href="wings.html"><img src="disc/wings.jpg" alt="WINGS" width="100"></a></li>
+            <li><a href="never.html"><img src="disc/you never.jpg" alt="YOU NEVER WALK ALONE" width="100"></a></li>
+            <li><a href="her.html"><img src="disc/her.jpg" alt="HER" width="100"></a></li>
+            <li><a href="tear.html"><img src="disc/tear.jpg" alt="TEAR" width="100"></a></li>
+            <li><a href="answer.html"><img src="disc/answer.jpg" alt="ANSWER" width="100"></a></li>
+            <li><a href="persona.html"><img src="disc/persona.jpg" alt="PERSONA" width="100"></a></li>
+            <li><a href="siete.html"><img src="disc/7.jpg" alt="MAP OF THE SOUL: 7" width="100"></a></li>
+            <li><a href="dynamite.html"><img src="disc/dynamite.jpg" alt="DYNAMITE" width="100"></a></li>
+            <li><a href="be.html"><img src="disc/be.jpg" alt="BE" width="100"></a></li>
+            <li><a href="butter.html"><img src="disc/butter.jpeg" alt="BUTTER" width="100"></a></li>
+            <li><a href="permission.html"><img src="disc/butter2.jpeg" alt="PERMISSION TO DANCE" width="100"></a></li>
+            <li><a href="proof.html"><img src="disc/proof.jpeg" alt="PROOF" width="100"></a></li>
+            <li><a href="take.html"><img src="disc/take.png" alt="TAKE TWO" width="100"></a></li>
+        </ul>
+    </section>
+
+    <!-- Sección Videos -->
+    <section id="videos">
+        <h2>Videos</h2>
+        <p>¡Disfruta de algunos de los videos más icónicos de BTS!</p>
+        <div class="video-gallery">
+            <div class="video">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/gdZLi9oWNZg" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/WMweEpGlu_U" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/7C2z4GqqS5E" title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe> 
+        </div> 
+    </section>
+
+<!-- Redes Sociales -->
+<div class="social-icons">
+    <a class="botonredes" href="https://www.facebook.com/bangtan.official" target="_blank"><img
+        src="iconos1/facebook.png"></a>
+        <a class="botonredes" href="https://www.instagram.com/bts.bighitofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img
+            src="iconos1/instagram.png"></a>
+    <a class="botonredes" href="https://www.tiktok.com/@bts_official_bighit?is_from_webapp=1&sender_device=pc" target="_blank"> <img
+            src="iconos1/tik.png"></a>
+    <a class="botonredes" href="https://www.youtube.com/channel/UCLkAepWjdylmXSltofFvsYQ" target="_blank"><img
+            src="iconos1/Youtube.png"></a>
+    <a class="botonredes" href="https://x.com/BTS_twt" target="_blank"><img src="iconos1/twitter.png"></a>
+    
+</div>
+
+<br><br>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Todos los derechos reservados 2025 © Desarrollado por <a href="desarrollador.html" style="color: rgb(252, 251, 251); text-decoration: none;" target="_blank"> Yeni Elda Garcia Ramón</a> </p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

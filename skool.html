@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKOOL LUV AFFAIR - BTS</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+</head>
+
+<body>
+    <header>
+        <h1>SKOOL LUV AFFAIR - BTS (방탄소년단)</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#album-info">Información del Álbum</a></li>
+                <li><a href="#single">Single</a></li>
+                <li><a href="#album3">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="album-info" class="album-container">
+        <div class="album-left">
+            <img src="disc/skool luv.jpg" alt="SKOOL LUV AFFAIR" class="album-img">
+        </div>
+
+        <div class="album-right">
+            <h2>Detalles del Álbum</h2>
+            <p><strong>SKOOL LUV AFFAIR</strong> es el tercer mini álbum de BTS, lanzado en 2014. En este álbum, BTS
+                aborda el tema del amor juvenil y las emociones que surgen en la adolescencia.</p>
+            <p>Con un sonido más refinado y letras llenas de energía, este álbum marcó un punto clave en su carrera.</p>
+        </div>
+    </section>
+
+    <section id="single" class="single-section">
+        <div class="single-info">
+            <h3>Single Principal: Boy In Luv</h3>
+        <p><strong>Producido por:</strong> BigHit Entertainment</p>
+                <p><strong>Fecha de lanzamiento:</strong> 12 de febrero de 2014</p>
+        </div>
+        
+        <div class="single-content">
+            <div class="single-left">
+                <p><strong>Lista de temas:</strong></p>
+                <ul id="song-list">
+                    <li class="song-item" data-song="songs/album3/1.intro.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            1. Intro: Skool Luv Affair  
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album3/2.boy_in_luv.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            2. Boy In Luv  
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album3/3.skit.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            3. Skit: Soulmate  
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album3/4.where.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            4. Where You From  
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album3/5.just_one_day.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            5. Just One Day  
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album3/6.tomorrow.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            6. Tomorrow 
+                        </div>
+                     </li>
+                     <li class="song-item" data-song="songs/album3/7.bts_cypher2.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            7. BTS Cypher Pt.2: Triptych
+                        </div>
+                     </li>  
+                     <li class="song-item" data-song="songs/album3/8.spine.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            8. Spine Breaker 
+                        </div>
+                     </li>  
+                     <li class="song-item" data-song="songs/album3/9.jump.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            9. Jump 
+                        </div>
+                     </li> 
+                     <li class="song-item" data-song="songs/album3/10.outro.mp3">
+                        <div class="song-box">
+                            <img src="disc/skool luv.jpg" class="album-thumbnail">
+                            10. Outro: Propose
+                        </div>
+                     </li>  
+
+                </ul>
+
+                <audio id="audio-player" controls style="display: none;">
+                    <source src="songs/album2/1.intro.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+                </audio>
+
+                <!-- Barra de progreso -->
+                <div id="progress-container">
+                    <div id="time-display">
+                        <span id="current-time">00:00</span>
+                        <input type="range" id="progress-bar" value="0" max="100" step="1" />
+                        <span id="total-time">00:00</span>
+                    </div>
+                </div>
+
+                <!-- Controles de audio -->
+        <div id="audio-controls">
+            <button id="prev-btn">&#10094;</button>
+            <button id="play-pause-btn">&#9658;</button> <!-- play -->
+            <button id="next-btn">&#10095;</button>
+        </div>
+
+        <!-- Contenedor de la letra -->
+        <div id="lyrics-box">Selecciona una canción para ver la letra</div>
+    </div>
+        </div>
+
+    </section>
+
+    
+    <section class="foto-section" id="album3">
+        <h2 class="foto-title">Fotos</h2>
+        <div class="foto-container">
+            <button class="foto-btn foto-prev">&#10094;</button>
+            <img id="fotoActual" src="img_single/album03/0.jpg" alt="Imagen de BTS" class="foto-img">
+            <button class="foto-btn foto-next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>VIDEO</h2>
+        <div class="video-gallery">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LHHjp3IMjMk
+                " title="BTS"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Pie de página -->
+   <footer>
+    <p>Todos los derechos reservados 2025 © Desarrollado por <a href="desarrollador.html" style="color: rgb(252, 251, 251); text-decoration: none;" target="_blank"> Yeni Elda Garcia Ramón</a> </p>
+</footer>
+    <script src="js/app1.js"></script>
+</body>
+
+</html>
